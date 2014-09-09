@@ -1,0 +1,5 @@
+# ignore cmake temporary folders
+tmp*/
+
+# ignore sublime workspaces
+*.sublime-workspace
