@@ -1,12 +1,10 @@
+message(STATUS "####################################################")
+message(STATUS "Try find resiprocate components with minimal version")
+
 find_package(Resiprocate 1.9 COMPONENTS recon reflow)
 
-if (NOT Resiprocate_FOUND)
-    message(SEND_ERROR "exact version of resiprocate not found")
-    return()
-endif()
-
 if (NOT ${Resiprocate_FOUND})
-    message(SEND_ERROR "resiprocate libraries not found")
+    message(SEND_ERROR "specific version of resiprocate components not found")
     return()
 endif()
 
