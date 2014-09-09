@@ -1,0 +1,5 @@
+find_package(Resiprocate 1.9 EXACT)
+if (NOT Resiprocate_FOUND)
+    message(SEND_ERROR "exact version of resiprocate not found")
+    return()
+endif()
