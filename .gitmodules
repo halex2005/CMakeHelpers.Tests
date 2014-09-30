@@ -1,3 +1,3 @@
 [submodule "CMakeHelpers"]
 	path = CMakeHelpers
-	url = git@github.com:halex2005/CMakeHelpers.git
+	url = https://github.com/halex2005/CMakeHelpers.git
