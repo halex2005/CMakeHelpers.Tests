@@ -1,7 +1,34 @@
 CMakeHelpers.Tests
 ==================
 
-CMakeHelpers.Tests uses CMakeHelpers repository as submodule and contains some tests and specific scenarios for CMakeHelpers. This tests can be used as examples of usage CMakeHelpers scripts.
+CMakeHelpers.Tests uses CMakeHelpers repository as submodule and
+contains some tests and specific scenarios for CMakeHelpers.
+This tests can be used as examples of usage CMakeHelpers scripts.
+
+Usage
+-----
+
+After clone of repository, you need initialize submodules:
+
+```
+git submodule init
+git submodule update
+```
+
+Then you need to create some temp folder for cmake builds:
+
+```
+mkdir tmp
+cd tmp
+```
+
+To start testing you should run cmake:
+
+```
+cmake ..
+```
+
+If cmake have no error output, tests are completed.
 
 Licensing
 ---------
