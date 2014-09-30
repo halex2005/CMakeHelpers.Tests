@@ -16,6 +16,8 @@ install:
 - sudo make install
 - popd
 script:
+- git submodule init
+- git submodule update
 - mkdir tmp
 - pushd tmp
 - cmake ..
