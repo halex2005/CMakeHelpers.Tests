@@ -1,0 +1,24 @@
+language: cpp
+compiler:
+- clang
+- gcc
+install:
+- sudo apt-get install pkg-config libsrtp0 libsrtp0-dev libboost-all-dev libresiprocate-1.9 libresiprocate-1.9-dev
+# install PJSIP from sources
+- wget http://www.pjsip.org/release/2.3/pjproject-2.3.tar.bz2
+- tar jxf pjproject-2.3.tar.bz2
+- export PJSIP_ROOT=$(readlink -f pjproject-2.3)
+- pushd pjproject-2.3
+- ./configure
+- make dep
+- make clean
+- make
+- sudo make install
+- popd
+script:
+- mkdir tmp
+- pushd tmp
+- cmake ..
+- popd
+os:
+- linux
