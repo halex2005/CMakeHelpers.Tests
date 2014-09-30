@@ -30,6 +30,11 @@ cmake ..
 
 If cmake have no error output, tests are completed.
 
+You can get errors if you have no installed specific libraries which script will search for:
+
+- [PJSIP](http://www.pjsip.org/)
+- [Resiprocate](http://resiprocate.org)
+
 Licensing
 ---------
 
